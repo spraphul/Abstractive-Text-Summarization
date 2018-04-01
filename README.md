@@ -7,8 +7,12 @@
 * Praphul Singh  
 * Ribhu Nirek
 
+## Requirements:
+You must have tensorflow and other libraries installed which are imported in the code, 'present.py' to run the model.
 
-## Steps to follow
+
+
+## Steps to follow:
 * Make a dataset consisting of articles and their summaries
 * Preprocess the dataset using the function preprocess in present.py
 * Make a vocabulary of words 

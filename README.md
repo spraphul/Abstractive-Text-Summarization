@@ -3,5 +3,7 @@
 # Microsoft Code.fun.Do
 
 ## Team Members:
-* Asitava Sarkar  * Praphul Singh  * Ribhu Nirek
+* Asitava Sarkar  
+* Praphul Singh  
+* Ribhu Nirek
 

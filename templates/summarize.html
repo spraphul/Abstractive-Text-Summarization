@@ -1,1 +1,78 @@
 
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <title>Text Summarization App</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/mainpage.css') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+ 
+<body>
+     
+
+</body>
+    
+    <div class="row">
+        <div class="panel panel-primary">
+            <div class="panel-heading" align="center"><h1>Text Summarization App</h1></div>
+        </div>
+    </div>
+    
+    <div class="row"> 
+        <div class="col-lg-3">
+        </div>
+
+        <div class="col-lg-6">
+            <div class="form-horizontal">
+                <div class="form-group">
+                    <form action="/summarize" method="POST">
+                        <label><h4><span style="display:inline-block; width: 14em"></span>Add your text here</h4></label>
+                        <textarea id = "input_text" name="input_text" class="form-control" rows="12" placeholder="Add your text here" required></textarea>
+                        <br>
+                        <span style="display:inline-block; width: 20em"></span><button class="btn btn-primary" role="button">Summarize</button>
+                    </form>
+                 </div>
+                
+            </div>
+        </div>
+
+        <div class="col-lg-3">
+        </div>
+
+    </div>
+    
+    <div class="row">
+    	<div class="col-lg-3">
+        </div>
+        
+	    <div class="col-lg-6">
+	        <label><h4><span style="display:inline-block; width: 14.25em"></span>Your text input</h4></label>
+            <div class="well">
+                <p class="para">{{ result[0] }}</p>
+            </div>
+        </div>
+        
+        <div class="col-lg-3">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-3">
+        </div>
+        
+        <div class="col-lg-6">
+            <label><h4><span style="display:inline-block; width: 12.5em"></span>Summary of your text</h4></label>
+            <div class="well">
+                <p class="para">{{ result[1] }}</p>
+            </div>
+        </div>
+        <div class="col-lg-3">
+        </div>
+    </div>
+        
+
+</body>
+</html>    
